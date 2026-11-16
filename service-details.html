@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>მომსახურების დეტალები | ITGEOFIX</title>
+  <meta name="description" content="ITGEOFIX-ს მომსახურებების დეტალური აღწერა, პირობები და ფასი.">
+  <meta property="og:title" content="მომსახურების დეტალები | ITGEOFIX">
+  <meta property="og:description" content="გაეცანით მომსახურების ფარგლებს, ფასსა და პირობებს.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <script src="service-details.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <div id="service-detail-content">
+      <section class="page-hero">
+        <div class="wrap page-heading">
+          <div>
+            <div class="breadcrumb"><a href="index.html">მთავარი</a> / <a href="services.html">მომსახურებები</a> / დეტალები</div>
+            <span class="eyebrow">მომსახურების აღწერა</span>
+            <h1 id="service-title">მომსახურება</h1>
+          </div>
+          <div>
+            <p id="service-summary"></p>
+            <div class="price-ribbon" style="margin-top:18px">
+              <strong id="service-price"></strong>
+              <span id="service-price-note"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <div class="content-grid">
+            <article class="info-panel">
+              <span class="eyebrow">სერვისის ფარგლები</span>
+              <h2 style="margin-top:14px">რას მოიცავს</h2>
+              <ul id="service-includes"></ul>
+            </article>
+            <article class="info-panel">
+              <span class="eyebrow">გასათვალისწინებელია</span>
+              <h2 style="margin-top:14px">პირობები</h2>
+              <ul id="service-conditions"></ul>
+            </article>
+          </div>
+          <div class="notice blue" style="margin-top:20px">
+            საბოლოო სამუშაოს ფარგლები და ფასი მომსახურების დაწყებამდე დასტურდება.
+          </div>
+          <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
+            <a id="service-request" class="btn" href="contact.html">მოთხოვნის დატოვება <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-outline" href="services.html">ყველა მომსახურება</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="service-not-found" class="section" hidden>
+      <div class="wrap">
+        <div class="notice">
+          <strong>მომსახურება ვერ მოიძებნა.</strong> აირჩიეთ სერვისი მომსახურებების სრული სიიდან.
+        </div>
+        <p style="margin-top:22px"><a class="btn" href="services.html">მომსახურებების ნახვა</a></p>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
